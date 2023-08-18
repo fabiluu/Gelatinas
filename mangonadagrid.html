@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@1,300&display=swap" rel="stylesheet">
+  
+<title>Mangonadas</title>
+ 
+ <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns:1fr 1fr 1fr;/*these are the 2 columns*/
+      grid-template-rows: auto auto auto;/*these are the 3 rows*/
+      align-items: center;
+      justify-content: center;
+      grid-template-columns: auto auto auto;
+      gap: 20px;
+    }
+
+    .tittle{
+      font-family: 'Montserrat Alternates', sans-serif;
+      color: rgb(255, 251, 0);
+      font-size: 2vw;
+      text-align: center;
+      position: relative;
+      animation-name: example;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes example {
+      0%   {background-color:red; left:0px; top:0px;}/* roja esquina sup izq*/
+      25%  {background-color:yellow; left:5px; top:0px;}
+      50%  {background-color:red; left:0px; top:0px;}
+ 
+
+
+
+    }
+    body{
+      background-color: rgb(253, 0, 0);
+    }
+
+
+
+    @media (max-width: 600px) {
+      .grid-container{
+        color: red;
+      display:flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      }
+      
+    }
+    .grid-container img{
+      border-radius: 10%;
+      width: 200px;
+      border: 10px solid;
+      border-image: repeating-linear-gradient(40deg, rgb(221, 221, 221), rgb(9, 221, 232), rgb(221, 200, 219) 30px) 60;
+      padding: 10px;
+    }    
+    .inicio div{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+    }
+  </style>
+</head>
+
+<body>
+  <h1 class= "tittle">🍑🍉🍇🍌🍒🍐🍎 Deliciosas Mangonadas 🍎🍐🍒🍌🍇🍉🍑</h1>
+  <br>
+  <div class="grid-container">
+    <div><img src="./images/mangonadas/1 (1).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (2).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (3).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (4).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (5).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (6).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (7).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+    <div><img src="./images/mangonadas/1 (8).jpeg" alt="Mangonadas "style="width: 300px; height:200px;"></div>
+   
+  </div>
+  <hr>
+  <div class="inicio"><div><a href="./index.html" ><img src="./images/Logo.png" alt="Inicio" style="width: 100px; height:100px;"><h5>Inicio</h5></div></div>
+</body>
+
+</html>
